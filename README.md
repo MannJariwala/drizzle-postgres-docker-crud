@@ -62,12 +62,6 @@ Ensure the container is running:
 docker ps
 ```
 
-Postgres will be available on:
-
-```
-localhost:5432
-```
-
 ---
 
 ## 🧬 Database & Migrations (Drizzle ORM)
@@ -84,7 +78,7 @@ npx drizzle-kit generate
 npx drizzle-kit push
 ```
 
-> ⚠️ Make sure Postgres container is running before executing `push`
+> ⚠️ Make sure Postgres container (Docker desktop) is running before executing `push`
 
 ---
 
@@ -105,7 +99,7 @@ npm start
 Server runs on:
 
 ```
-http://localhost:8000
+http://localhost:8000 (PORT from env file)
 ```
 
 ---
